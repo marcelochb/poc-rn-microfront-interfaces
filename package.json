@@ -1,6 +1,8 @@
 {
-  "name": "interfaces",
+  "name": "@poc/interfaces",
   "version": "0.0.1",
+  "main": "index.ts",
+  "types": "index.d.ts",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
