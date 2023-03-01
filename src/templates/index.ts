@@ -1,4 +1,4 @@
-import { ITheme } from "@poc/theme";
+import { ITheme } from "../themes";
 
 export interface ITemplate<T> {
   theme: ITheme,
@@ -6,5 +6,5 @@ export interface ITemplate<T> {
   listData?: T[],
   loading?: boolean,
   error?: boolean,
-  callBack?: ({}:T) => void;
+  callBack?: (data:T) => void;
 }
