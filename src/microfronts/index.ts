@@ -11,5 +11,6 @@ interface IScreen {
 
 export interface IMicrofont {
   stack: IStack,
+  initialRoute: string,
   screens:IScreen[],
 }
