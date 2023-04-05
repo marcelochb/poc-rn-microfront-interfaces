@@ -56,6 +56,7 @@ export interface IMetricsTheme {
 }
 
 export interface ITheme {
+  name: string,
   metrics: IMetricsTheme,
   fontSize: IFontSizeTheme,
   colors: IColorTheme,
