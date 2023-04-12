@@ -1,16 +1,11 @@
-interface IStack {
-  name: string;
-  component: () => JSX.Element;
-}
-
-interface IScreen {
+export interface IScreen {
   name: string;
   component: () => JSX.Element;
   title: string;
 }
 
 export interface IMicrofont {
-  stack: IStack,
+  stack: IScreen,
   initialRoute: string,
   screens:IScreen[],
 }
