@@ -14,8 +14,8 @@ export interface IMicrofont {
 
 
 export interface IRepackComponent {
-  theme: ITheme,
-  callBack: () => {}
+  theme?: ITheme,
+  callBack?: () => {}
 }
 export interface IRepackMicrofront {
   default: ComponentType<IRepackComponent>
