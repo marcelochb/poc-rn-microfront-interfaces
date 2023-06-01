@@ -13,7 +13,7 @@ export interface IMicrofont {
 }
 
 
-interface IRepackComponent {
+export interface IRepackComponent {
   theme: ITheme,
   callBack: () => {}
 }
