@@ -4,7 +4,7 @@ interface IControllerGetDataReturn<T> {
   error: boolean;
 }
 
-export interface IControllerGetData<T> {(): IControllerGetDataReturn<T>}
+export interface IControllerGetData<T> {(params?:T): IControllerGetDataReturn<T>}
 
 type IControllerFormDataReturn<T> = IControllerGetDataReturn<T> & {
   onSubmit: (e?: React.FormEvent<HTMLFormElement> | undefined) => void,
