@@ -13,10 +13,13 @@ export interface IMicrofont {
 }
 
 
-export interface IRepackComponent {
-  theme?: ITheme,
-  callBack?: () => void
+export interface IRepackComponent<T = any> {
+  theme: ITheme,
+  callBack?: () => void,
+  data?: T,
+  callBackBy?: (params:T) => void,
 }
-export interface IRepackMicrofront {
-  default: ComponentType<IRepackComponent>
+
+export interface IRepackMicrofront<T = any> {
+  default: ComponentType<IRepackComponent<T>>
 }
