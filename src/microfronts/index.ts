@@ -1,8 +1,8 @@
-import { ComponentType } from "react";
+import React, { ComponentType } from "react";
 import { ITheme } from "../themes";
 export interface IScreen {
   name: string;
-  component: () => JSX.Element;
+  component: React.FC<any>;
   title: string;
 }
 
